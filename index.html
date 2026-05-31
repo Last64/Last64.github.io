@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MENDI Mehdi — Créateur Numérique · BUT MMI</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="cursor" id="cursor"><span class="cursor-label" id="cursorLabel"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="grid-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo"><span class="nl-mendi">MENDI</span><span class="nl-dot">·</span><span class="nl-mehdi">MEHDI</span></a>
+    <nav class="nav-center" aria-label="Navigation principale">
+      <a href="#outils"   class="nav-link"><span class="nk-idx">00</span>Outils</a>
+      <a href="#handball" class="nav-link"><span class="nk-idx">01</span>Handball</a>
+      <a href="#scolaire" class="nav-link"><span class="nk-idx">02</span>Scolaire</a>
+      <a href="#perso"    class="nav-link"><span class="nk-idx">03</span>Perso</a>
+      <a href="#contact"  class="nav-link"><span class="nk-idx">04</span>Contact</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-badge"><span class="badge-dot"></span>Disponible</span>
+      <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#outils"   class="mm-link"><em>00</em>Outils</a>
+      <a href="#handball" class="mm-link"><em>01</em>Handball</a>
+      <a href="#scolaire" class="mm-link"><em>02</em>Scolaire</a>
+      <a href="#perso"    class="mm-link"><em>03</em>Perso</a>
+      <a href="#contact"  class="mm-link"><em>04</em>Contact</a>
+    </nav>
+    <div class="mm-footer">BUT MMI · IUT de Mulhouse</div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-name" aria-hidden="true">MM</div>
+    <div class="hero-top js-reveal"><span class="hero-eyebrow">Sélection de travaux — 2025/2026</span></div>
+    <div class="hero-title-wrap">
+      <h1 class="hero-title">
+        <span class="ht-row js-reveal" style="--d:.04s"><span class="ht-word">Création</span></span>
+        <span class="ht-row ht-row--accent js-reveal" style="--d:.14s"><span class="ht-serif">numérique</span><span class="ht-amp">&amp;</span></span>
+        <span class="ht-row js-reveal" style="--d:.24s"><span class="ht-word ht-outline">Design</span></span>
+      </h1>
+    </div>
+    <div class="hero-bottom js-reveal" style="--d:.38s">
+      <p class="hero-desc">Étudiant en <strong>BUT MMI</strong> passionné par l'identité visuelle, le motion design et la communication digitale sportive.</p>
+      <div class="hero-meta"><span>IUT de Mulhouse</span><span class="sep">—</span><span>Mulhouse · 2026</span></div>
+      <a href="#handball" class="hero-scroll-cta">
+        <span class="hsc-circle"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M4 11l5 5 5-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>Voir les projets</span>
+      </a>
+    </div>
+    <div class="hero-counters js-reveal" style="--d:.5s">
+      <div class="hc-item"><span class="hc-n" data-count="4">0</span><span class="hc-l">Affiches handball</span></div>
+      <div class="hc-sep">—</div>
+      <div class="hc-item"><span class="hc-n" data-count="2">0</span><span class="hc-l">Projets scolaires</span></div>
+      <div class="hc-sep">—</div>
+      <div class="hc-item"><span class="hc-n" data-count="3">0</span><span class="hc-l">Catégories créatives</span></div>
+    </div>
+    <div class="hero-chip js-reveal" style="--d:.62s"><span class="chip-pulse"></span>CS Saint-Louis Handball</div>
+  </section>
+
+  <!-- ═══════════════ OUTILS ═══════════════ -->
+  <section class="sec sec--alt sec--tools" id="outils">
+    <div class="container">
+      <header class="sec-head js-reveal">
+        <div class="sec-head-left">
+          <h2 class="sec-title">Mes <em>outils</em></h2>
+        </div>
+        <p class="sec-desc">La suite Adobe au complet, la 3D et la vidéo — les logiciels que j'utilise au quotidien pour créer.</p>
+      </header>
+
+      <div class="tools-grid">
+
+        <div class="tool-card js-reveal" style="--d:.05s">
+          <div class="tool-icon">
+            <img src="img/logo/Photoshop.svg" alt="Photoshop" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">Photoshop</span>
+            <span class="tool-cat">Retouche · Montage · Visuels</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="90"></div></div>
+            <span class="tool-pct">90%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.10s">
+          <div class="tool-icon">
+            <img src="img/logo/Illustrator.svg" alt="Illustrator" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">Illustrator</span>
+            <span class="tool-cat">Vectoriel · Logo · Illustration</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="85"></div></div>
+            <span class="tool-pct">85%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.15s">
+          <div class="tool-icon">
+            <img src="img/logo/Premiere Pro.svg" alt="Premiere Pro" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">Premiere Pro</span>
+            <span class="tool-cat">Montage vidéo · Motion · Reels</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="75"></div></div>
+            <span class="tool-pct">75%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.20s">
+          <div class="tool-icon">
+            <img src="img/logo/InDesign.svg" alt="InDesign" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">InDesign</span>
+            <span class="tool-cat">Mise en page · Print · Édition</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="78"></div></div>
+            <span class="tool-pct">78%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.25s">
+          <div class="tool-icon">
+            <img src="img/logo/substance3dpainter.svg" alt="Substance 3D Painter" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">Substance 3D Painter</span>
+            <span class="tool-cat">Texturing · 3D · PBR</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="60"></div></div>
+            <span class="tool-pct">60%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.30s">
+          <div class="tool-icon">
+            <img src="img/logo/AfterEffect.svg" alt="After Effects" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">After Effects</span>
+            <span class="tool-cat">Motion Design · VFX</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="65"></div></div>
+            <span class="tool-pct">65%</span>
+          </div>
+        </div>
+
+        <div class="tool-card js-reveal" style="--d:.35s">
+          <div class="tool-icon">
+            <img src="img/logo/Figma.svg" alt="Figma" loading="lazy" />
+          </div>
+          <div class="tool-info">
+            <span class="tool-name">Figma</span>
+            <span class="tool-cat">UI/UX · Maquettage · Prototypage</span>
+          </div>
+          <div class="tool-bar-wrap">
+            <div class="tool-bar-track"><div class="tool-bar-fill" data-width="70"></div></div>
+            <span class="tool-pct">70%</span>
+          </div>
+        </div>
+
+        <!-- Bonus visuel avec SOON... discret -->
+        <div class="tool-card tool-card--bonus js-reveal" style="--d:.40s">
+          <div class="tool-bonus-content">
+            <span class="soon-badge">SOON...</span>
+            <p>Blender</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 01 HANDBALL ═══════════════ -->
+  <section class="sec" id="handball">
+    <div class="container">
+      <header class="sec-head js-reveal">
+        <div class="sec-head-left"><span class="sec-idx">01</span><h2 class="sec-title">CS Saint-Louis <em>Handball</em></h2></div>
+        <p class="sec-desc">Communication digitale bénévole — fiches joueurs, affiches événements, vidéos réseaux sociaux pour la saison 2025/2026.</p>
+      </header>
+
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Affiches &amp; Visuels</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--4col">
+          <article class="gc gc--portrait js-card" data-idx="0" data-group="handball" data-cat="Graphisme · Sport" data-title="Affiche Emy Marque" data-desc="Joueuse U13F — Comité sélectionnée Haut-Rhin FFHandball. Stats : 4 matchs · 42 buts · 93% de réussite au tir.">
+            <div class="gc-img-wrap"><img src="img/AfficheEmy.png" alt="Affiche Emy Marque" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Graphisme</span><span class="gc-tag">U13F</span></div><h3>Affiche Emy Marque</h3></footer>
+          </article>
+          <article class="gc gc--portrait js-card" data-idx="1" data-group="handball" data-cat="Graphisme · Sport" data-title="Affiche Isaak Kirmaci" data-desc="Joueur U15M — Comité sélectionné Haut-Rhin FFHandball. Stats : 6 matchs · 36 buts · 82% de réussite au tir.">
+            <div class="gc-img-wrap"><img src="img/AfficheIsaak.png" alt="Affiche Isaak Kirmaci" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Graphisme</span><span class="gc-tag">U15M</span></div><h3>Affiche Isaak Kirmaci</h3></footer>
+          </article>
+          <article class="gc gc--portrait js-card" data-idx="2" data-group="handball" data-cat="Sport · Collectif" data-title="Sélectionnées U13F" data-desc="Visuel collectif des 5 joueuses U13F sélectionnées avec la génération 2012 au Comité Haut-Rhin FFHandball.">
+            <div class="gc-img-wrap"><img src="img/AfficheU13F.png" alt="Sélectionnées U13F" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Sport</span><span class="gc-tag">Collectif</span></div><h3>Sélectionnées U13F</h3></footer>
+          </article>
+          <article class="gc gc--portrait js-card" data-idx="3" data-group="handball" data-cat="Événementiel · Print" data-title="Concours Intersport — Tri-Nations" data-desc="Affiche pour la Tri-Nations Handball Cup. Challenge barre transversale — 4×100€ à gagner. 17 &amp; 18 janvier 2026, Sportenum Saint-Louis.">
+            <div class="gc-img-wrap"><img src="img/AfficheTri-Nations.png" alt="Affiche Tri-Nations" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Événementiel</span><span class="gc-tag">Print</span></div><h3>Concours Tri-Nations</h3></footer>
+          </article>
+          <!-- Espace SOON -->
+          <article class="gc gc--portrait gc--add-card">
+            <div class="gc-img-wrap gc-img-wrap--empty"><div class="add-placeholder"><span class="soon-badge">SOON...</span></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Loading</span></div><h3>Projet à venir</h3></footer>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><polygon points="2,1 11,6 2,11" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Vidéos &amp; Photos</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--video">
+
+          <article class="gc gc--video-card">
+            <div class="gc-img-wrap gc-img-wrap--video">
+              <video controls preload="auto" class="gc-video" playsinline>
+                <source src="video/U15Victoire.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag gc-tag--video">Vidéo</span><span class="gc-tag">U15 · Handball</span></div>
+              <h3>Victoire U15 — CS Saint-Louis</h3>
+            </footer>
+          </article>
+
+          <article class="gc gc--video-card">
+            <div class="gc-img-wrap gc-img-wrap--video">
+              <video class="gc-video" controls preload="metadata" playsinline poster="img/miniature-seniorm.jpg">
+                <source src="video/SeniorM.mp4" type="video/mp4"/>
+                Votre navigateur ne supporte pas la lecture de cette vidéo.
+              </video>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag gc-tag--video">Vidéo</span><span class="gc-tag">Senior M · Handball</span></div>
+              <h3>Match Senior M — CS Saint-Louis</h3>
+            </footer>
+          </article>
+
+          <!-- PHOTO SENIOR F CHAMPION (Couverture de l'album avec data-group) -->
+          <article class="gc gc--video-card js-card" data-idx="4" data-group="album-senior" data-cat="Photo · Sport" data-title="Championnes Coupe Crédit Mutuel" data-desc="Victoire 31/30 de l'équipe Senior F en Coupe Crédit Mutuel (Cliquez pour voir l'album).">
+            <div class="gc-img-wrap gc-img-wrap--video">
+              <img src="img/SeniorFChampion.png" alt="Victoire Senior F Coupe Crédit Mutuel" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag">Album Photo</span><span class="gc-tag">Senior F</span></div>
+              <h3>Coupe Crédit Mutuel (31/30)</h3>
+            </footer>
+          </article>
+
+          <!-- ALBUM CACHÉ (Photos supplémentaires avec data-group) -->
+          <article class="js-card" data-idx="5" data-group="album-senior" data-cat="Photo · Album" data-title="Ambiance Supporters" data-desc="Les supporters lors de la finale de la Coupe Crédit Mutuel." style="display: none;">
+            <img src="img/Supporter1.jpeg" alt="Supporter 1" loading="lazy"/>
+          </article>
+          <article class="js-card" data-idx="6" data-group="album-senior" data-cat="Photo · Album" data-title="Ambiance Supporters" data-desc="L'engouement du public pour soutenir les Senior F." style="display: none;">
+            <img src="img/Supporter2.jpeg" alt="Supporter 2" loading="lazy"/>
+          </article>
+          <article class="js-card" data-idx="7" data-group="album-senior" data-cat="Photo · Album" data-title="Remise du Trophée" data-desc="Les Senior F célèbrent leur victoire avec la Coupe Crédit Mutuel !" style="display: none;">
+            <img src="img/RemiseTrophées.jpeg" alt="Remise des trophées" loading="lazy"/>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 02 SCOLAIRE ═══════════════ -->
+  <section class="sec sec--alt" id="scolaire">
+    <div class="container">
+      <header class="sec-head js-reveal">
+        <div class="sec-head-left"><span class="sec-idx">02</span><h2 class="sec-title">Projets <em>scolaires</em></h2></div>
+        <p class="sec-desc">Travaux BUT MMI — SAE, branding, maquettes web, motion design et explorations créatives encadrées.</p>
+      </header>
+
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Identité &amp; Print</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--sco">
+          <article class="gc gc--featured js-card" data-idx="8" data-group="sae202" data-cat="Branding · SAE 202" data-title="Planche Logo — EuroPulse" data-desc="SAE 202 — Création de l'identité visuelle du festival EuroPulse. Logo hybride Tour Eiffel + London Eye, déclinaisons couleur, croquis et essais 3D.">
+            <div class="gc-img-wrap"><img src="img/PlancheLogo.png" alt="Planche Logo EuroPulse" style="object-position:top" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Branding</span><span class="gc-tag gc-tag--school">SAE 202</span></div><h3>Planche Logo — EuroPulse</h3></footer>
+          </article>
+          
+          <article class="gc gc--side js-card" data-idx="9" data-group="sae202" data-cat="Mockup · SAE 202" data-title="Planche Mockup — EuroPulse" data-desc="SAE 202 — Application du logo EuroPulse sur supports : casquette, gobelet, t-shirts staff &amp; festivaliers, porte-clés, bracelet électronique.">
+            <div class="gc-img-wrap"><img src="img/mockup.png" alt="Planche Mockup EuroPulse" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Mockup</span><span class="gc-tag gc-tag--school">SAE 202</span></div><h3>Planche Mockup — EuroPulse</h3></footer>
+          </article>
+
+          <article class="gc gc--featured js-card" data-idx="10" data-group="sae202" data-cat="Typographie · SAE 202" data-title="Planche Typographique — EuroPulse" data-desc="SAE 202 — Choix typographiques pour l'identité EuroPulse. Définition de la hiérarchie et des graisses.">
+            <div class="gc-img-wrap"><img src="img/typo.png" alt="Planche Typographique EuroPulse" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Typographie</span><span class="gc-tag gc-tag--school">SAE 202</span></div><h3>Planche Typo — EuroPulse</h3></footer>
+          </article>
+          
+          <article class="gc gc--side js-card" data-idx="11" data-group="sae202" data-cat="Couleurs · SAE 202" data-title="Palette de Couleurs — EuroPulse" data-desc="SAE 202 — Définition de la charte colorimétrique du projet, valeurs et contrastes.">
+            <div class="gc-img-wrap"><img src="img/palettecouleur.png" alt="Palette Couleurs EuroPulse" loading="lazy"/><div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Couleurs</span><span class="gc-tag gc-tag--school">SAE 202</span></div><h3>Palette Couleurs — EuroPulse</h3></footer>
+          </article>
+
+        </div><!-- /gal--sco -->
+      </div><!-- /subsec identite -->
+
+      <!-- Affiches scolaires -->
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Affiches scolaires</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--4col">
+
+          <article class="gc gc--portrait js-card" data-idx="12" data-group="affiches-scolaires"
+            data-cat="Affiche · Scolaire" data-title="ChipoZik"
+            data-desc="Affiche scolaire réalisée dans le cadre du BUT MMI à l'IUT de Mulhouse. Réalisé avec David Antosik.">
+            <div class="gc-img-wrap">
+              <img src="img/ChipoZik.jpg" alt="Affiche ChipoZik" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">&#x2922;</button></div>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag">Affiche</span><span class="gc-tag gc-tag--school">Scolaire</span></div>
+              <h3>ChipoZik</h3>
+            </footer>
+          </article>
+
+          <article class="gc gc--portrait js-card" data-idx="13" data-group="affiches-scolaires"
+            data-cat="Affiche · Scolaire" data-title="StockBrunna"
+            data-desc="Affiche scolaire réalisée dans le cadre du BUT MMI à l'IUT de Mulhouse. Réalisé avec David Antosik.">
+            <div class="gc-img-wrap">
+              <img src="img/StockBrunna.jpg" alt="Affiche StockBrunna" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">&#x2922;</button></div>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag">Affiche</span><span class="gc-tag gc-tag--school">Scolaire</span></div>
+              <h3>StockBrunna</h3>
+            </footer>
+          </article>
+
+          <article class="gc gc--portrait js-card" data-idx="14" data-group="affiches-scolaires"
+            data-cat="Affiche · Scolaire" data-title="FestiLudo"
+            data-desc="Affiche scolaire réalisée dans le cadre du BUT MMI à l'IUT de Mulhouse. Réalisé avec David Antosik.">
+            <div class="gc-img-wrap">
+              <img src="img/FestiLudo.jpg" alt="Affiche FestiLudo" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">&#x2922;</button></div>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag">Affiche</span><span class="gc-tag gc-tag--school">Scolaire</span></div>
+              <h3>FestiLudo</h3>
+            </footer>
+          </article>
+
+          <article class="gc gc--portrait gc--add-card">
+            <div class="gc-img-wrap gc-img-wrap--empty"><div class="add-placeholder"><span class="soon-badge">SOON...</span></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Loading</span></div><h3>Prochaine affiche</h3></footer>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="1" y="2" width="10" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M1 5h10" stroke="currentColor" stroke-width="1.2"/><circle cx="3" cy="3.5" r="0.6" fill="currentColor"/><circle cx="5" cy="3.5" r="0.6" fill="currentColor"/></svg>Projets Web &amp; Maquettes</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--web">
+          
+          <!-- ALBUM METAMOB (Maquettes Figma) -->
+          <article class="gc gc--web-card js-card" data-idx="15" data-group="album-metamob" data-cat="UI/UX · Figma" data-title="MetaMob — Design System" data-desc="Maquettes et Design System pour l'application MetaMob (Cliquez pour voir les écrans). Réalisé avec David Antosik.">
+            <div class="gc-img-wrap gc-img-wrap--web">
+              <img src="img/figma/Accueil.png" alt="MetaMob Accueil" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div>
+            </div>
+            <footer class="gc-foot"><div><span class="gc-tag gc-tag--web">Maquette</span><span class="gc-tag gc-tag--school">Figma</span></div><h3>MetaMob — Design System</h3></footer>
+          </article>
+
+          <!-- ALBUM CACHÉ METAMOB -->
+          <article class="js-card" data-idx="16" data-group="album-metamob" data-cat="UI/UX · Figma" data-title="MetaMob — Accueil (Variante)" data-desc="Déclinaison de la page d'accueil du Design System MetaMob. Réalisé avec David Antosik." style="display: none;">
+            <img src="img/figma/Accueil2.png" alt="MetaMob Accueil 2" loading="lazy"/>
+          </article>
+          <article class="js-card" data-idx="17" data-group="album-metamob" data-cat="UI/UX · Figma" data-title="MetaMob — Inscription" data-desc="Parcours d'inscription et onboarding utilisateur. Réalisé avec David Antosik." style="display: none;">
+            <img src="img/figma/Inscription.png" alt="MetaMob Inscription" loading="lazy"/>
+          </article>
+          <article class="js-card" data-idx="18" data-group="album-metamob" data-cat="UI/UX · Figma" data-title="MetaMob — Archimonstres" data-desc="Interface de gestion et d'affichage des Archimonstres. Réalisé avec David Antosik." style="display: none;">
+            <img src="img/figma/Archimonstres.png" alt="MetaMob Archimonstres" loading="lazy"/>
+          </article>
+
+          <article class="gc gc--web-card gc--placeholder">
+            <div class="gc-img-wrap gc-img-wrap--web">
+              <div class="web-placeholder"><span class="soon-badge">SOON...</span></div>
+            </div>
+            <footer class="gc-foot"><div><span class="gc-tag gc-tag--web">Web</span><span class="gc-tag gc-tag--school">SAE</span></div><h3>Projet web — en cours</h3></footer>
+          </article>
+
+          <article class="gc gc--web-card gc--add-card">
+            <div class="gc-img-wrap gc-img-wrap--web"><div class="add-placeholder"><span class="soon-badge">SOON...</span></div></div>
+            <footer class="gc-foot"><div><span class="gc-tag">Loading</span></div><h3>Projet à venir</h3></footer>
+          </article>
+
+        </div>
+        <p class="placeholder-note">💡 <strong>Ajouter un projet web :</strong> faites une capture d'écran, placez-la dans <code>img/</code> et remplacez le <code>.web-placeholder</code> par <code>&lt;img src="img/capture.png" alt="..."&gt;</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 03 PERSO ═══════════════ -->
+  <section class="sec" id="perso">
+    <div class="container">
+      <header class="sec-head js-reveal">
+        <div class="sec-head-left"><span class="sec-idx">03</span><h2 class="sec-title">Projets <em>personnels</em></h2></div>
+        <p class="sec-desc">Explorations créatives libres — affiches, visuels et expérimentations graphiques en dehors du cadre scolaire et associatif.</p>
+      </header>
+
+      <div class="subsec js-reveal">
+        <div class="subsec-head">
+          <span class="subsec-label"><svg width="12" height="12" viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Affiches &amp; Graphisme</span>
+          <div class="subsec-line"></div>
+        </div>
+        <div class="gal gal--4col">
+
+          <article class="gc gc--portrait js-card" data-idx="19" data-group="perso" data-cat="Graphisme · Perso" data-title="Affiche Benzema" data-desc="Création personnelle autour de Karim Benzema.">
+            <div class="gc-img-wrap">
+              <img src="img/benzema.png" alt="Affiche Benzema" loading="lazy"/>
+              <div class="gc-overlay"><button class="gc-zoom" aria-label="Agrandir">⤢</button></div>
+            </div>
+            <footer class="gc-foot">
+              <div><span class="gc-tag">Perso</span><span class="gc-tag">Affiche</span></div>
+              <h3>Affiche Benzema</h3>
+            </footer>
+          </article>
+
+          <article class="gc gc--portrait gc--placeholder"><div class="gc-img-wrap gc-img-wrap--empty"><div class="placeholder-inner"><span class="soon-badge">SOON...</span></div></div><footer class="gc-foot"><div><span class="gc-tag">Perso</span></div><h3>Projet Perso</h3></footer></article>
+          <article class="gc gc--portrait gc--placeholder"><div class="gc-img-wrap gc-img-wrap--empty"><div class="placeholder-inner"><span class="soon-badge">SOON...</span></div></div><footer class="gc-foot"><div><span class="gc-tag">Perso</span></div><h3>Projet Perso</h3></footer></article>
+          <article class="gc gc--portrait gc--add-card"><div class="gc-img-wrap gc-img-wrap--empty"><div class="add-placeholder"><span class="soon-badge">SOON...</span></div></div><footer class="gc-foot"><div><span class="gc-tag">Loading</span></div><h3>À venir</h3></footer></article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec sec--contact" id="contact">
+    <div class="container">
+      <div class="contact-wrap js-reveal">
+        <div class="contact-left">
+          <span class="sec-idx">04</span>
+          <h2 class="contact-title">On <em>travaille</em><br/>ensemble ?</h2>
+          <p>Disponible pour des projets graphiques, de la communication digitale, un stage ou une collaboration créative.</p>
+          <div class="contact-links">
+            <a href="mailto:mhdmendi@gmail.com" class="c-link"><span class="cl-label">Email</span><span class="cl-val">mhdmendi@gmail.com <span class="cl-arrow">↗</span></span></a>
+            <a href="https://www.linkedin.com/in/mehdi-mendi" target="_blank" rel="noopener" class="c-link"><span class="cl-label">LinkedIn</span><span class="cl-val">MENDI Mehdi <span class="cl-arrow">↗</span></span></a>
+          </div>
+        </div>
+        <div class="contact-deco" aria-hidden="true">
+          <div class="cd-ring">
+            <svg viewBox="0 0 200 200" class="cd-svg"><defs><path id="circlePath" d="M 100,10 A 90,90 0 1,1 99.99,10"/></defs><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 8"/><text><textPath href="#circlePath" startOffset="0%">MENDI · MEHDI · BUT · MMI · 2025 · DESIGN · GRAPHIQUE ·&nbsp;</textPath></text></svg>
+            <div class="cd-center">MM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 — Mendi Mehdi</span><span class="f-sep">✦</span><span>BUT MMI · IUT de Mulhouse</span><span class="f-sep">✦</span><span>Fait avec passion</span></div></footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation projet" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Fermer"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 3l14 14M17 3L3 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Précédent"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Suivant"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="lb-inner">
+      <div class="lb-media"><img id="lbImg" src="" alt=""/></div>
+      <div class="lb-info"><span class="lb-cat" id="lbCat"></span><h3 class="lb-title" id="lbTitle"></h3><p class="lb-desc" id="lbDesc"></p><span class="lb-counter" id="lbCounter"></span></div>
+    </div>
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
